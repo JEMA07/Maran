@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Maranatha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Radio Maranatha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Radio Maranatha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolore blanditiis nulla debitis aliquam vitae? Quibusdam at accusantium corporis quod?</p>
+    <!-- Aquí puedes agregar el reproductor de audio y otros contenidos -->
+    <audio controls>
+      <source src="videos/y2mate.com - EVANGELISTA DAVID BIERD  SE CALLO UN AGUILA  12 HORAS  TOCADOS POR JESUS.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </main>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Radio Maranatha</p>
+  </footer>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var menuItems = document.querySelectorAll("nav ul li a");
+      for (var i = 0; i < menuItems.length; i++) {
+        menuItems[i].addEventListener("click", function() {
+          var menuItemText = this.innerText;
+          alert("Has clicado en: " + menuItemText);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
